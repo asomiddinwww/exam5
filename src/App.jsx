@@ -19,6 +19,9 @@ import Camera from "./pages/cards1/camera/Camera";
 import CameraDetail from "./pages/cards1/camera/LaptopDetail";
 import Accessories from "./pages/cards1/Accessories/Accessories";
 import AccessoriesDetail from "./pages/cards1/Accessories/AccessoriesDetail";
+import ProductCard from "./pages/productcard/ProductCard";
+import ProductDetail from "./pages/productcard/ProductDetail";
+import ProductCard2 from "./pages/productcard/ProductCard";
 
 const App = () => {
   return (
@@ -55,6 +58,10 @@ const App = () => {
          <Route path="/accessories" element={<MainLayoutCard />}>
           <Route index element={<Accessories/>} />
           <Route path=":id" element={<AccessoriesDetail />} />
+        </Route>
+         <Route path="/ProductCard2" element={<MainLayoutCard />}>
+          <Route index element={<ProductCard2/>} />
+          <Route path=":id" element={<ProductDetail />} />
         </Route>
       </Routes>
     </>
