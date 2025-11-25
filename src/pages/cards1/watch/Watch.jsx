@@ -23,7 +23,10 @@ const Watch = () => {
 
   return (
    <div className="w-full pt-30">
-      <div className="max-w-[1400px] m-auto px-5 flex flex-wrap justify-between gap-10 justify-center">
+   <div className="border-b-2 border-[#B4B4B4]">
+        <h1 className="text-3xl pl-20 font-[600] pb-4">Watchs</h1>
+        </div>
+      <div className="pt-10 max-w-[1400px] m-auto px-5 flex flex-wrap justify-between gap-10 justify-center">
         {data.map((value) => (
             <Link 
                 to={`/watch/${value.id}`} 

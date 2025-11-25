@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logoimg from "./img/logo.png";
 import likeicon from "./img/heart.svg";
 import shopicon from "./img/bag.svg";
@@ -22,12 +22,10 @@ const Header = () => {
       <div className="max-w-[1400px] m-auto px-5">
         <div className="w-full flex items-center pt-3 pb-3 justify-between">
 
-          {/* Logo */}
-          <div>
+          <Link to={"/"}>
             <img className="w-12" src={logoimg} alt="logo" />
-          </div>
+          </Link>
 
-          {/* Desktop Menu */}
           <div className="hidden md:block">
             <ul className="flex items-center gap-10 font-Inter text-[17.5px]">
               {links.map((l) => (
@@ -54,21 +52,18 @@ const Header = () => {
             </ul>
           </div>
 
-          {/* Icons */}
           <div className="flex gap-4 items-center max-[636px]:hidden">
             <img className="cursor-pointer hover:scale-110" src={likeicon} />
             <img className="cursor-pointer hover:scale-110" src={shopicon} />
             <img className="cursor-pointer hover:scale-110" src={usericon} />
           </div>
 
-          {/* Mobile Menu Icon */}
           <div className="md:hidden" onClick={() => setOpen(true)}>
             <Menu size={30} className="cursor-pointer" />
           </div>
         </div>
       </div>
 
-      {/* MOBILE SIDEBAR MENU */}
       <div
         className={`fixed top-0 right-0 h-full w-[260px] bg-white shadow-lg transition-transform duration-300 z-50 ${
           open ? "translate-x-0" : "translate-x-full"

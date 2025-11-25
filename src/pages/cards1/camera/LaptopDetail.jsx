@@ -277,7 +277,7 @@ const CameraDetail = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div>      
     </>
   );
 };

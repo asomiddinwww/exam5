@@ -22,6 +22,8 @@ import AccessoriesDetail from "./pages/cards1/Accessories/AccessoriesDetail";
 import ProductCard from "./pages/productcard/ProductCard";
 import ProductDetail from "./pages/productcard/ProductDetail";
 import ProductCard2 from "./pages/productcard/ProductCard";
+import ProductCard3 from "./pages/productcard copy/ProductCard";
+import ProductDetail2 from "./pages/productcard copy/ProductDetail";
 
 const App = () => {
   return (
@@ -62,6 +64,10 @@ const App = () => {
          <Route path="/ProductCard2" element={<MainLayoutCard />}>
           <Route index element={<ProductCard2/>} />
           <Route path=":id" element={<ProductDetail />} />
+        </Route>
+         <Route path="/ProductCard3" element={<MainLayoutCard />}>
+          <Route index element={<ProductCard3/>} />
+          <Route path=":id" element={<ProductDetail2 />} />
         </Route>
       </Routes>
     </>

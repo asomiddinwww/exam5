@@ -160,7 +160,7 @@ const DetailGaming = () => {
                 <div className="flex w-full pb-1 border-b-1 gap-4 text-[20px]">
                   <div className="p-2">
                     <h1>Technical Details</h1>
-                  </div>
+                  </div>  
                   <div className="p-2">Similar Products</div>
                   <div className="p-2">Comments</div>
                 </div>

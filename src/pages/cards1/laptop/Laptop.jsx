@@ -23,6 +23,9 @@ const Laptop = () => {
 
   return (
    <div className="w-full pt-30">
+    <div className="border-b-2 border-[#B4B4B4]">
+        <h1 className="text-3xl pl-20 font-[600] pb-4">Laptop</h1>
+        </div>
       <div className="max-w-[1400px] m-auto px-5 flex flex-wrap justify-between gap-10 justify-center">
         {data.map((value) => (
             <Link 

@@ -23,7 +23,10 @@ const Phone = () => {
 
   return (
    <div className="w-full pt-30">
-      <div className="max-w-[1400px] m-auto px-5 flex flex-wrap justify-between gap-10 justify-start">
+    <div className="border-b-2 border-[#B4B4B4]">
+        <h1 className="text-3xl pl-20 font-[600] pb-4">Phone</h1>
+        </div>
+      <div className="max-w-[1400px] m-auto pt-20 px-5 flex flex-wrap justify-between gap-10 justify-start">
         {data.map((value) => (
             <Link 
                 to={`/phone/${value.id}`} 

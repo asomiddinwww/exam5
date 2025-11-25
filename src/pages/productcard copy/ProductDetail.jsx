@@ -8,7 +8,7 @@ import dd from "./svg/dd.png";
 import dico from "./svg/dico.svg";
 import Products from "./Products";
 
-const ProductDetail = () => {
+const ProductDetail2 = () => {
   const { id } = useParams();
   const [user, setUser] = useState([null]);
   const [loader, setLoader] = useState(false);
@@ -34,7 +34,7 @@ const ProductDetail = () => {
       <div className="p-10 pt-40 flex justify-around">
         <div className="flex flex-col justify-center items-center gap-3">
           <div>
-            <img src={user.image} className="w-80" alt="" />
+            <img src={user.image2} className="w-80" alt="" />
           </div>
           <div className="flex items-center gap-4">
            
@@ -42,11 +42,11 @@ const ProductDetail = () => {
         </div>
         <div className="flex flex-col gap-8">
           <div>
-            <h1 className="text-3xl font-bold">{user.name}</h1>
+            <h1 className="text-3xl font-bold">{user.name2}</h1>
           </div>
           <div className="flex gap-5 items-center">
             <div className="bg-[#053987] text-white p-3 pt-1.5 pb-1.5 rounded-[10px] flex gap-2">
-              <p>{user.stars}</p>
+              <p>{user.stars2}</p>
             </div>
             <div>
               <h1 className="text-[18px]">sold 125</h1>
@@ -192,9 +192,9 @@ const ProductDetail = () => {
               <div className="w-full flex flex-wrap justify-between max-[700px]:justify-center">
                 <div className="p-5 w-80 rounded-2xl shadow-2xl">
                   <img className="w-full" src={user.image} alt="" />
-                  <h1>{user.name}</h1>
+                  <h1>{user.name2}</h1>
                   <div className="flex pt-10 w-full justify-between items-center">
-                    <h1>${user.price}</h1>
+                    <h1>${user.price2}</h1>
                     <p className="flex items-center gap-1">
                       {user.stars}
                     </p>
@@ -243,4 +243,4 @@ const ProductDetail = () => {
   );
 };
 
-export default ProductDetail;
+export default ProductDetail2;
