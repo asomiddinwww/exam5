@@ -7,6 +7,7 @@ import tru from "../watch/svg/truck.svg";
 import dd from "../watch/svg/dd.png";
 import dico from "../watch/svg/dico.svg";
 import star from "./Star1.svg";
+import Laptop from "./Laptop.jsx";
 
 const LaptopDetail = () => {
   const { id } = useParams();
@@ -200,77 +201,8 @@ const LaptopDetail = () => {
                   </div>
                 </div>
                 <div className="pt-10">
-                  <div><h1 className="text-2xl font-bold">Similar Products</h1></div>
-                  <div className="w-full flex flex-wrap justify-between max-[700px]:justify-center">
-                    <div className="p-5 w-80 rounded-2xl shadow-2xl">
-                      <img className="w-full" src={user.image} alt="" />
-                      <h1>{user.name}</h1>
-                      <div className="flex pt-10 w-full justify-between items-center">
-                        <h1>${user.price}</h1>
-                        <p className="flex items-center gap-1"><img src={star} alt="" />{user.stars}</p>
-                      </div>
-                    </div>
-                     <div className="p-5 w-80 rounded-2xl shadow-2xl">
-                      <img className="w-full" src={user.imgpage1} alt="" />
-                      <h1>{user.name}</h1>
-                      <div className="flex pt-10 w-full justify-between items-center">
-                        <h1>${user.price}</h1>
-                        <p className="flex items-center gap-1"><img src={star} alt="" />{user.stars}</p>
-                      </div>
-                    </div>
-                     <div className="p-5 w-80 rounded-2xl shadow-2xl">
-                      <img className="w-full" src={user.imgpage2} alt="" />
-                      <h1>{user.name}</h1>
-                      <div className="flex pt-10 w-full justify-between items-center">
-                        <h1>${user.price}</h1>
-                        <p className="flex items-center gap-1"><img src={star} alt="" />{user.stars}</p>
-                      </div>
-                    </div>
-                     <div className="p-5 w-80 rounded-2xl shadow-2xl">
-                      <img className="w-full" src={user.imgpage3} alt="" />
-                      <h1>{user.name}</h1>
-                      <div className="flex pt-10 w-full justify-between items-center">
-                        <h1>${user.price}</h1>
-                        <p className="flex items-center gap-1"><img src={star} alt="" />{user.stars}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                 <div className="pt-20">
-                  <div><h1 className="text-2xl font-bold">Similar Products</h1></div>
-                  <div className="w-full flex flex-wrap justify-between max-[700px]:justify-center">
-                    <div className="p-5 w-80 rounded-2xl shadow-2xl">
-                      <img className="w-full" src={user.image} alt="" />
-                      <h1>{user.name}</h1>
-                      <div className="flex pt-10 w-full justify-between items-center">
-                        <h1>${user.price}</h1>
-                        <p className="flex items-center gap-1"><img src={star} alt="" />{user.stars}</p>
-                      </div>
-                    </div>
-                     <div className="p-5 w-80 rounded-2xl shadow-2xl">
-                      <img className="w-full" src={user.imgpage1} alt="" />
-                      <h1>{user.name}</h1>
-                      <div className="flex pt-10 w-full justify-between items-center">
-                        <h1>${user.price}</h1>
-                        <p className="flex items-center gap-1"><img src={star} alt="" />{user.stars}</p>
-                      </div>
-                    </div>
-                     <div className="p-5 w-80 rounded-2xl shadow-2xl">
-                      <img className="w-full" src={user.imgpage4} alt="" />
-                      <h1>{user.name}</h1>
-                      <div className="flex pt-10 w-full justify-between items-center">
-                        <h1>${user.price}</h1>
-                        <p className="flex items-center gap-1"><img src={star} alt="" />{user.stars}</p>
-                      </div>
-                    </div>
-                     <div className="p-5 w-80 rounded-2xl shadow-2xl">
-                      <img className="w-full" src={user.imgpage2} alt="" />
-                      <h1>{user.name}</h1>
-                      <div className="flex pt-10 w-full justify-between items-center">
-                        <h1>${user.price}</h1>
-                        <p className="flex items-center gap-1"><img src={star} alt="" />{user.stars}</p>
-                      </div>
-                    </div>
+                  <div>
+                    <Laptop/>
                   </div>
                 </div>
               </div>
